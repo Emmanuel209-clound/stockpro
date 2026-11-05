@@ -2,8 +2,8 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import LandingPage from "./pages/LandingPage";
-import Login from "./pages/Login";
+import LandingPage from "./pages/Landingpage";
+import Login from "./pages/login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Products from "./pages/Products";
