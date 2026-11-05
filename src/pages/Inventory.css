@@ -1,0 +1,207 @@
+
+.inventory-main {
+  flex: 1;
+  min-width: 0;
+  min-height: 100vh;
+  padding: 35px;
+  background: #f4f7fb;
+  color: #06142d;
+}
+
+.inventory-header {
+  margin-bottom: 30px;
+}
+
+.inventory-header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.inventory-header p {
+  color: #718096;
+}
+
+.inventory-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.inventory-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.inventory-card span {
+  color: #718096;
+}
+
+.inventory-card h2 {
+  margin-top: 12px;
+  font-size: 28px;
+}
+
+.inventory-card.warning h2 {
+  color: #d97706;
+}
+
+.inventory-card.danger h2 {
+  color: #dc2626;
+}
+
+.stock-update-form,
+.inventory-table-container {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.stock-update-form h2,
+.inventory-table-header h2 {
+  margin-bottom: 20px;
+}
+
+.stock-update-form form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.stock-update-form input,
+.inventory-table-header input {
+  padding: 12px;
+  border: 1px solid #dce3ed;
+  border-radius: 7px;
+  outline: none;
+}
+
+.stock-update-form input {
+  flex: 1;
+  min-width: 180px;
+}
+
+.stock-update-form input:focus,
+.inventory-table-header input:focus {
+  border-color: #00b9ed;
+}
+
+.stock-update-form button,
+.stock-update-btn {
+  background: #00b9ed;
+  color: white;
+  border: none;
+  padding: 11px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.stock-update-form button:hover,
+.stock-update-btn:hover {
+  background: #008fbd;
+}
+
+.stock-update-form .stock-cancel-btn {
+  background: #718096;
+}
+
+.inventory-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.inventory-table-header input {
+  max-width: 260px;
+  width: 100%;
+}
+
+.inventory-table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.inventory-table-container table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+}
+
+.inventory-table-container th,
+.inventory-table-container td {
+  padding: 16px 12px;
+  text-align: left;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.inventory-table-container th {
+  background: #f7f9fc;
+  color: #526078;
+  font-size: 13px;
+}
+
+.inventory-table-container td {
+  font-size: 14px;
+}
+
+.stock-available,
+.stock-low,
+.stock-out {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.stock-available {
+  background: #e5f8ee;
+  color: #16834b;
+}
+
+.stock-low {
+  background: #fff0e5;
+  color: #d97706;
+}
+
+.stock-out {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+@media (max-width: 1100px) {
+  .inventory-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .inventory-main {
+    padding: 25px 18px;
+  }
+
+  .inventory-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .inventory-table-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .inventory-table-header input {
+    max-width: 100%;
+  }
+
+  .stock-update-form form {
+    flex-direction: column;
+  }
+}
+

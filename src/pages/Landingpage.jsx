@@ -1,0 +1,13 @@
+import Hero from "../components/Hero";
+import About from "../components/About";
+import Features from "../components/Features";
+import Testimonials from "../components/Testimonials";
+import FAQ from "../components/FAQ";
+import Contact from "../components/Contact";
+
+const LandingPage = () => {
+return ( <main> <Hero /> <About /> <Features /> <Testimonials /> <FAQ /> <Contact /> </main>
+);
+};
+
+export default LandingPage;

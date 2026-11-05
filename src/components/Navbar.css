@@ -1,0 +1,178 @@
+/* NAVBAR */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 22px 4%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  z-index: 10;
+}
+
+/* LOGO */
+.navbar-logo {
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+}
+
+.navbar-logo h2 {
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.navbar-logo h2 span {
+  color: #00b9ed;
+}
+
+/* NAVIGATION LINKS */
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(14px, 2vw, 32px);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #00b9ed;
+}
+
+/* ACTIVE LINK UNDERLINE */
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  width: 100%;
+  height: 3px;
+  background: #00b9ed;
+  border-radius: 5px;
+}
+
+/* NAVIGATION BUTTONS */
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.register-btn,
+.login-btn {
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.register-btn {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  background: transparent;
+}
+
+.register-btn:hover {
+  background: #00b9ed;
+  border-color: #00b9ed;
+  color: #ffffff;
+}
+
+.login-btn {
+  color: #ffffff;
+  background: #00b9ed;
+  border: 2px solid #00b9ed;
+}
+
+.login-btn:hover {
+  background: transparent;
+  border-color: #ffffff;
+}
+
+/* TABLET */
+@media (max-width: 1000px) {
+  .navbar {
+    padding: 20px 3%;
+    gap: 15px;
+  }
+
+  .navbar-logo h2 {
+    font-size: 28px;
+  }
+
+  .nav-links {
+    gap: 13px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .register-btn,
+  .login-btn {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 760px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 15px 4%;
+  }
+
+  .navbar-logo h2 {
+    font-size: 25px;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .register-btn,
+  .login-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}

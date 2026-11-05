@@ -1,0 +1,150 @@
+/* AUTHENTICATION SECTION */
+
+.auth-section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 130px 20px 60px;
+  box-sizing: border-box;
+  background: #06142d;
+}
+
+/* AUTHENTICATION CARD */
+
+.auth-container {
+  width: 100%;
+  max-width: 480px;
+  padding: 45px 40px;
+  background: #0b1e3d;
+  border: 1px solid rgba(0, 185, 237, 0.25);
+  border-radius: 18px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+/* HEADING */
+
+.auth-container h1 {
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.auth-container h1 span {
+  color: #00b9ed;
+}
+
+.auth-container > p {
+  color: #b8c5d8;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* FORM */
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.form-group label {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid #344967;
+  border-radius: 9px;
+  outline: none;
+  background: #06142d;
+  color: #ffffff;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input::placeholder {
+  color: #8493a9;
+}
+
+.form-group input:focus {
+  border-color: #00b9ed;
+}
+
+/* SUBMIT BUTTON */
+
+.auth-container button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 9px;
+  background: #00b9ed;
+  color: #06142d;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-container button:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* ACCOUNT SWITCH */
+
+.auth-container .auth-switch {
+  color: #b8c5d8;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.auth-switch a,
+.back-home {
+  color: #00b9ed;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-switch a:hover,
+.back-home:hover {
+  color: #ffffff;
+}
+
+/* BACK HOME */
+
+.back-home {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 35px 22px;
+  }
+
+  .auth-container h1 {
+    font-size: 25px;
+  }
+}

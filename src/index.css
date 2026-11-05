@@ -1,0 +1,74 @@
+/* ==============================
+GLOBAL RESET
+================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+/* ==============================
+HTML
+================================= */
+
+html {
+scroll-behavior: smooth;
+scroll-padding-top: 100px;
+}
+
+/* ==============================
+BODY
+================================= */
+
+body {
+width: 100%;
+min-width: 320px;
+min-height: 100vh;
+font-family: Arial, Helvetica, sans-serif;
+background: #06142d;
+color: #ffffff;
+overflow-x: hidden;
+}
+
+/* ==============================
+ROOT APPLICATION
+================================= */
+
+#root {
+width: 100%;
+min-height: 100vh;
+margin: 0;
+padding: 0;
+text-align: initial;
+}
+
+/* ==============================
+HEADINGS
+================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+color: inherit;
+font-family: inherit;
+}
+
+/* ==============================
+PARAGRAPHS
+================================= */
+
+p {
+color: inherit;
+}
+
+/* ==============================
+LINKS
+================================= */
+
+a {
+text-decoration: none;
+}

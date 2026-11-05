@@ -1,0 +1,205 @@
+
+.sales-main {
+  flex: 1;
+  min-width: 0;
+  min-height: 100vh;
+  padding: 35px;
+  background: #f4f7fb;
+  color: #06142d;
+}
+
+.sales-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.sales-header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.sales-header p {
+  color: #718096;
+}
+
+.record-sale-btn,
+.sale-form button {
+  background: #00b9ed;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.record-sale-btn:hover,
+.sale-form button:hover {
+  background: #008fbd;
+}
+
+.sales-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.sales-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.sales-card span {
+  color: #718096;
+}
+
+.sales-card h2 {
+  margin-top: 12px;
+  font-size: 27px;
+}
+
+.sale-form-container,
+.sales-table-container {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.sale-form-container h2,
+.sales-table-header h2 {
+  margin-bottom: 20px;
+}
+
+.sale-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.sale-form div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sale-form label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.sale-form input,
+.sale-form select,
+.sales-table-header input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dce3ed;
+  border-radius: 7px;
+  outline: none;
+  background: white;
+}
+
+.sale-form input:focus,
+.sale-form select:focus,
+.sales-table-header input:focus {
+  border-color: #00b9ed;
+}
+
+.sale-form .sale-total {
+  background: #eaf8fd;
+  padding: 15px;
+  border-radius: 7px;
+  justify-content: center;
+}
+
+.sale-total span {
+  color: #526078;
+  font-size: 13px;
+}
+
+.sale-total h3 {
+  color: #008fbd;
+  font-size: 22px;
+}
+
+.sale-form .sale-cancel-btn {
+  background: #718096;
+}
+
+.sales-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.sales-table-header input {
+  max-width: 280px;
+}
+
+.sales-table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.sales-table-container table {
+  width: 100%;
+  min-width: 750px;
+  border-collapse: collapse;
+}
+
+.sales-table-container th,
+.sales-table-container td {
+  padding: 16px 12px;
+  text-align: left;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.sales-table-container th {
+  background: #f7f9fc;
+  color: #526078;
+  font-size: 13px;
+}
+
+.sales-table-container td {
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .sales-main {
+    padding: 25px 18px;
+  }
+
+  .sales-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .sales-header,
+  .sales-table-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .sales-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .sale-form {
+    grid-template-columns: 1fr;
+  }
+
+  .sales-table-header input {
+    max-width: 100%;
+  }
+}
+
